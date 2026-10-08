@@ -42,7 +42,5 @@ tmp/
 temp/
 *.tmp
 
-# Local overrides
-application-local.yml
-application-local.yaml
-application-local.properties
+# IntelliJ build output
+out/

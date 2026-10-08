@@ -120,3 +120,11 @@ Ainda não validados nesta etapa:
 - integração Flyway;
 - integração Hibernate/JPA;
 - execução automatizada desses testes.
+
+## Fatos relevantes para a validação:
+
+- PostgreSQL local do projeto passou a usar a porta 55432 por conflito na 5432.
+- Spring Boot 4.1.1 requer spring-boot-starter-flyway para auto-configuração.
+- Flyway 12.4.0 aplicou V1 e V2 com sucesso em banco vazio.
+- V1 gera warning "there is already a transaction in progress" por preservar BEGIN/COMMIT,
+  sem impedir a aplicação da migration.

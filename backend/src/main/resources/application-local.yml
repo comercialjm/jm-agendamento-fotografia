@@ -1,0 +1,8 @@
+spring:
+  datasource:
+    url: ${DB_URL:jdbc:postgresql://localhost:55432/jm_agendamento}
+    username: ${DB_USERNAME:jm_local_admin}
+    password: ${DB_PASSWORD}
+
+  flyway:
+    locations: classpath:db/migration
